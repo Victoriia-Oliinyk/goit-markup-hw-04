@@ -160,21 +160,35 @@ body {
   text-decoration: none;
 }
 .auth-nav .link:hover,
-.auth-nav .link:focus {
+.auth-nav .link:focus
+ {
   color: var(--accent-color);
 }
+.contact-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.contact-icons .contact-icon:hover,
+.contact-icons .contact-icon:focus {
+  fill: var(--accent-color);
+
+}
+
+
+/* .contact-icons:hover,
+.contact-icons:focus {
+  fill: var(--accent-color);
+
 
 /*------------------------ Герой ---------------------*/
 
-/* .section.hero {
-  height: 600px;
-  max-width: 1600px;
-
-  padding-top: 200px;
-  padding-bottom: 200px;
-  margin-left: auto;
-  margin-right: auto; */
 .section.hero {
+  height: 600px;
+    max-width: 1600px;
+    padding-top: 200px;
+      padding-bottom: 200px;
+      margin-left: auto;
+      margin-right: auto;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -194,7 +208,7 @@ body {
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
-  /* width: 696px; */
+  
 
   color: var(--hero-title-color);
   font-weight: 900;
@@ -255,7 +269,9 @@ body {
 .feature-item {
   width: 270px;
 }
-
+.feature-item::before {
+  content: "";
+}
 .feature-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -269,6 +285,18 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+.features-icon-block {
+  display: flex;
+  width: 100%;
+  height: 120px;
+  margin-bottom: 30px;
+
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--background-team-color);
+  border-radius: 4px;
 }
 
 .feature-list .text {
@@ -305,6 +333,9 @@ body {
 .team-item {
   width: 270px;
   background: var(--background-body-color);
+
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 .team-item:not(:last-child) {
   margin-right: 30px;
@@ -331,6 +362,59 @@ body {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+}
+ .social {
+  
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-bottom: 30px;
+  padding-left: 32px;
+ 
+} 
+.social-nav {
+  /* display: flex; */
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  margin-right: 10px;
+}
+.social-nav:last-child {
+  margin-right: 0;
+}
+
+.social-link {
+  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      background-color: var(--background-body-color);
+      width: 44px;
+      height: 44px;
+     border-radius: 50%;
+      
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+  fill: transparent;
+}
+.social-icon {
+  fill: #AFB1B8;
+}
+.social-icon:hover,
+.social-icon:focus {
+  fill: var(--hero-title-color);
+}
+
+
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.social-link:not(:last-child) {
+  margin-right: 10px;
 }
 
 /* --------------------------------------Подвал------------------------- */
