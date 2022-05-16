@@ -390,6 +390,9 @@ body {
 .social-icon {
   fill: var(--icon-color);
 }
+.social-text {
+  margin-bottom: 16px;
+}
 
 .social-list {
   display: flex;
@@ -475,6 +478,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.footer-social-link{
+  display: flex;
 }
 
 .footer-social-icon {
@@ -600,6 +606,9 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
+
+
+
 .filtrs .btn:hover,
 .filtrs .btn:focus {
   color: var(--hero-title-color);
@@ -624,6 +633,11 @@ body {
   line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
+}
+.link-filtrs-box:hover,
+.link-filtrs-box:focus{
+box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
 .link-filtrs-box {
